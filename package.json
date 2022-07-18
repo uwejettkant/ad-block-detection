@@ -1,0 +1,19 @@
+{
+  "name": "ad-bock-detection",
+  "version": "1.0.0",
+  "description": "AdBlockDetection",
+  "main": "adblockDetector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwejettkant/ad-bock-detection.git"
+  },
+  "author": "Uwe Jettkant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uwejettkant/ad-bock-detection/issues"
+  },
+  "homepage": "https://github.com/uwejettkant/ad-bock-detection#readme"
+}

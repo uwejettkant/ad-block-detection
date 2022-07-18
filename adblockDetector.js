@@ -45,7 +45,33 @@
 *
 */
 
-"use strict";
+const activateAds = false;
+
+if (activateAds) {
+  var adSlot1, adSlot2;
+
+  googletag.cmd.push(function () {
+    // Define the first slot
+    adSlot1 = googletag
+      .defineSlot("/6355419/Travel", [728, 90], "leaderboard1")
+      .setTargeting("test", "refresh")
+      .addService(googletag.pubads());
+
+    // Define the second slot
+    adSlot2 = googletag
+      .defineSlot("/6355419/Travel", [728, 90], "leaderboard2")
+      .setTargeting("test", "refresh")
+      .addService(googletag.pubads());
+
+    // Configure SRA
+    googletag.pubads().enableSingleRequest();
+
+    // Start ad fetching
+    googletag.enableServices();
+  });
+}
+
+("use strict");
 (function (win) {
   var version = "1.0";
 
