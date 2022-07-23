@@ -36,7 +36,7 @@ h5.bg-success,h5.bg-danger {
     text-align: center;
     margin: 0 auto;
     border-radius: 20px;
-  
+    font-size: 1.5rem;
 }
 
 h5.bg-success {
