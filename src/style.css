@@ -12,7 +12,8 @@ body {
 
 .description {
     margin-bottom: 2em;
-    width: 65%
+    width: 65%;
+    text-align: center;
 }
 
 .centered-container {
