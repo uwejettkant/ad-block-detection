@@ -164,6 +164,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 *
 *
 */
+//declare the dataLayer if it does not already exist on the page
+window.dataLayer = window.dataLayer || [];
 "use strict";
 
 (function (win) {
@@ -750,11 +752,19 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   var disabledEl = document.getElementById("adb-not-enabled");
 
   function adBlockDetected() {
+    dataLayer.push({
+      adBlock: true,
+      event: "adBlockStatus"
+    });
     enabledEl.style.display = "block";
     disabledEl.style.display = "none";
   }
 
   function adBlockNotDetected() {
+    dataLayer.push({
+      adBlock: false,
+      event: "adBlockStatus"
+    });
     disabledEl.style.display = "block";
     enabledEl.style.display = "none";
   }
@@ -807,7 +817,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62720" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52798" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,8 +1,8 @@
 {
   "name": "ad-bock-detection",
   "version": "1.0.0",
-  "description": "AdBlockDetection",
-  "main": "adblockDetector.js",
+  "description": "Adblock Detection",
+  "main": "main.js",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",

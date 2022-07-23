@@ -45,6 +45,9 @@
 *
 */
 
+//declare the dataLayer if it does not already exist on the page
+window.dataLayer = window.dataLayer || [];
+
 ("use strict");
 
 (function (win) {
