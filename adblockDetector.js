@@ -45,33 +45,8 @@
 *
 */
 
-const activateAds = false;
-
-if (activateAds) {
-  var adSlot1, adSlot2;
-
-  googletag.cmd.push(function () {
-    // Define the first slot
-    adSlot1 = googletag
-      .defineSlot("/6355419/Travel", [728, 90], "leaderboard1")
-      .setTargeting("test", "refresh")
-      .addService(googletag.pubads());
-
-    // Define the second slot
-    adSlot2 = googletag
-      .defineSlot("/6355419/Travel", [728, 90], "leaderboard2")
-      .setTargeting("test", "refresh")
-      .addService(googletag.pubads());
-
-    // Configure SRA
-    googletag.pubads().enableSingleRequest();
-
-    // Start ad fetching
-    googletag.enableServices();
-  });
-}
-
 ("use strict");
+
 (function (win) {
   var version = "1.0";
 
@@ -113,6 +88,7 @@ if (activateAds) {
     return result;
   }
 
+  console.log("test");
   /**
 	* Ajax helper object to download external scripts.
 	* Initialize object with an options object
@@ -219,7 +195,7 @@ if (activateAds) {
   var baitNode = null;
   var quickBait = {
     cssClass:
-      "pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links",
+      "pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links ad-banner banner_ad adsbygoogle ad_block adslot ad_slot advert1 content-ad",
   };
   var baitTriggers = {
     nullProps: [ofs + "Parent"],
