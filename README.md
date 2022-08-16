@@ -1,5 +1,5 @@
 # Adblock Detection
-Code to detect ad-blocking Sortware with Javascript. The core JavaScript was originally published by the IAB. 
+Code to detect ad-blocking Software with Javascript. The core JavaScript was originally published by the IAB. 
 You can find the repository here: [IAB GitHub Repository](https://github.com/InteractiveAdvertisingBureau/AdBlockDetection).
 
 As described in the IAB repository their logic does not run on your local maschine.
